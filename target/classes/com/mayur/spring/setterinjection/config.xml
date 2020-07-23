@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="emp" class="com.mayur.spring.setterinjection.Employee"
+		p:id="10">
+		<property name="name" value="Mayur"></property>
+
+		<property name="sal">
+			<value>100000.00f</value>
+		</property>
+
+		<property name="skills">
+			<list>
+				<value>Java</value>
+				<value>C</value>
+				<value>Python</value>
+				<value>Cpp</value>
+				<value>Cpp</value>
+			</list>
+		</property>
+
+		<property name="family">
+			<map>
+				<entry key="father" value="Narendra"></entry>
+				
+				<entry value="Komal">
+					<key>
+						<value>Sister</value>	
+					</key>
+				</entry>
+				
+				<entry key="Mother">
+					<value>Chhaya</value>
+				</entry>
+				
+				<entry key="Brother" value="Yash"></entry>
+			</map>
+		</property>
+
+	</bean>
+</beans>

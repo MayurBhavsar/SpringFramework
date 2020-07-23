@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="score"
+		class="com.mayur.spring.setterinjection.reftype.Scores" p:math="50"
+		p:sicence="60" p:english="70" />
+
+	<bean name="stud"
+		class="com.mayur.spring.setterinjection.reftype.Student" p:scores1-ref="score">
+		<property name="scores2">
+			<ref bean="score"/>
+		</property>	
+		
+		<property name="scores3" ref="score"></property>
+	</bean>
+
+</beans>
