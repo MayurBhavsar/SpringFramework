@@ -2,13 +2,14 @@ package com.mayur.spring.setterinjection;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class Employee {
 
 	private int id;
 	private String name;
 	private float sal;
-	private List<String> skills;
+	private Set<String> skills;
 	private Map<String,String> family;
 	
 	public int getId() {
@@ -29,10 +30,10 @@ public class Employee {
 	public void setSal(float sal) {
 		this.sal = sal;
 	}
-	public List<String> getSkills() {
+	public Set<String> getSkills() {
 		return skills;
 	}
-	public void setSkills(List<String> skills) {
+	public void setSkills(Set<String> skills) {
 		this.skills = skills;
 	}
 	public Map<String, String> getFamily() {

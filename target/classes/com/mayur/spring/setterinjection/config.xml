@@ -18,13 +18,13 @@
 		</property>
 
 		<property name="skills">
-			<list>
+			<set>
 				<value>Java</value>
 				<value>C</value>
 				<value>Python</value>
 				<value>Cpp</value>
 				<value>Cpp</value>
-			</list>
+			</set>
 		</property>
 
 		<property name="family">
